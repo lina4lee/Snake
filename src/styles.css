@@ -18,3 +18,11 @@
   width: 50px;
   position: absolute;
 }
+
+.body {
+  background: black;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(4, 173, 4);
+  position: absolute;
+}
