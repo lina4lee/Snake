@@ -1,11 +1,11 @@
 class Head {
   constructor(el) {
-    this.board = el;
+    this.board = el; // board on the DOM
     this.node = document.createElement('div');
     this.node.setAttribute('id', 'head');
     el.appendChild(this.node);
 
-    //initialze current direction as null to proevent movement until user provides direction
+    //initialze current direction as null to prevent movement until user provides direction
     this.currentDirection = 'null';
     this.SPEED = 250; // time interval in milliseconds
 
@@ -26,7 +26,6 @@ class Head {
   move() {
     //continue to loop the game
     const timeoutID = setTimeout(this.move.bind(this), this.SPEED);
-
 
     const head = this.node;
     const direction = this.currentDirection;
